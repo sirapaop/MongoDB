@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "63a27f5ee5dc029d1c0c708f"
+  },
+  "ProductID": "001",
+  "ProductName": "Hero",
+  "ProductPrice": "50"
+},{
+  "_id": {
+    "$oid": "63a280c0e5dc029d1c0c7091"
+  },
+  "ProductID": "002",
+  "ProductName": "antiHero",
+  "ProductPrice": "50"
+},{
+  "_id": {
+    "$oid": "63a2810ae5dc029d1c0c7092"
+  },
+  "ProductID": "003",
+  "ProductName": "mavel",
+  "ProductPrice": "50"
+},{
+  "_id": {
+    "$oid": "63a281aae5dc029d1c0c7094"
+  },
+  "ProductID": "004",
+  "ProductName": "DC",
+  "ProductPrice": "50"
+},{
+  "_id": {
+    "$oid": "63a281f1e5dc029d1c0c7095"
+  },
+  "ProDuctID": "005",
+  "ProductName": "Blackpanther",
+  "ProductPower": "12800"
+}]
