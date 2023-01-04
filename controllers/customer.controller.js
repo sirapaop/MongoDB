@@ -13,7 +13,7 @@ exports.findAll = (req, res) => {
             msg: err.message
         })
     })
-
+}
 exports.create = (req, res) => {
     const c = new customer(req.body)
 
@@ -25,4 +25,18 @@ exports.create = (req, res) => {
         })
     })
 }
+
+exports.findById = (req, res) => {
+    customer.findById(req.params.customerId).then(data =>{
+        if(!data){
+            return res.status(404).json({
+                msg: "ไม่พบ record รหัส: "+ req.params.customerId
+            })
+        }
+        res.json(data)
+    }).catch(err =>{
+        return res.status(500).json({
+            msg: "เกิดข้อผิดพลาด เนื่องจาก: "+ err.message
+        })
+    })
 }
