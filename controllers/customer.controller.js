@@ -57,3 +57,18 @@ exports.update = (req, res) =>{
     })
 }
 
+exports.delete = (req, res) => {
+    customer.findByIdAndDelete(req.params.customerId)
+    .then(data => {
+        if(!data){
+            return res.status(404).json({
+                msg: "ไม่พบ record รหัส: " + req.params.customerId
+            })
+        }
+        res.json({ msg: "ลบข้อมูลเรียบร้อยแล้ว !!!"})
+    }).catch(err => {
+        return res.status(500).json({
+            msg: "ไม่สามารถลบข้อมูลได้ เนื่องจาก: " + err.message
+        })    
+    })
+}
