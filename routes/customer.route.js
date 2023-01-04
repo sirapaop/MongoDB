@@ -1,7 +1,11 @@
 module.exports = (app) => {
-    const Customer = require("../controllers/customer.controller.js")
+    const customer = require("../controllers/customer.controller.js")
 
-    app.get('/', Customer.index);
-    app.get('/api/customer',Customer.findAll);
+    app.get('/', customer.index);
+    app.post('/api/customer', customer.create)
+    app.get('/api/customer',customer.findAll)
+    app.get('/api/customer/:customerId',customer.findById)
+    app.put('/api/customer/:customerId',customer.update)
+    app.delete('/api/customer/:customerId',customer.delete)
 }
 

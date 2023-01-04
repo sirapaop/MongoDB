@@ -46,7 +46,7 @@ function initCustomer(){
         },
         {
             CustomerId: 0002,
-            FullName: "Thitipat",
+            FullName: "Thitiphat",
             Address: "bangkok"
    
         },
