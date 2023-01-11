@@ -1,3 +1,3 @@
 module.exports = {
-    url: 'mongodb://127.0.0.1:27017/TechDB'
+    url: 'mongodb+srv://sirapaop2545:24102002w@clustersoutheastasia.chmccwd.mongodb.net/?retryWrites=true&w=majority'
 }

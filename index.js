@@ -40,18 +40,18 @@ const server = app.listen(3000, ()=>{
 function initCustomer(){
     let data = [
         {
-            CustomerId: 0001,
+            CustomerID: 0001,
             FullName: "sirapaop",
             Address: "bangkok"
         },
         {
-            CustomerId: 0002,
+            CustomerID: 0002,
             FullName: "Thitiphat",
             Address: "bangkok"
    
         },
         {
-            CustomerId: 0004,
+            CustomerID: 0004,
             FullName: "gunn",
             Address: "bangkok"
 
